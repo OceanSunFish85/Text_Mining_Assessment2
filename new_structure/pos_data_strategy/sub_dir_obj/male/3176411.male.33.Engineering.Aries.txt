@@ -1,0 +1,1 @@
+problem mismatch source tree lirc everything remote socket mythtv file directory socket mythtv search culprit left make liblirc_client0 mythtv lircrc file directory cp mythtv lircrc mplayer

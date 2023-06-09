@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Blog>
+<date>29,May,2004</date>
+<post>
+
+
+       
+       urlLink    Test 
+     
+
+    
+</post>
+<date>20,June,2004</date>
+<post>
+
+
+       
+      Replacing TabSheets with Frames - by Dan Miser  Rating:      Ratings: 107     Rate it   Abstract: Using TFrames, interfaces and inheritance, you can overcome the limitations of using TTabSheets in your application.   Introduction Using a TPageControl component helps separate your GUI by putting bits and pieces of related functionality on a single form. While this approach is very nice, putting all of the visual controls and code directly on the TTabsheets of the TPageControl can lead to a few problems, such as:  Increased unit size. This makes it harder to focus on the intent of the code.  Tabsheets are always created. This means the controls that are on the tabsheets are always created. This, in turn, means that you may encounter compilation problems as the unit gets too large, or you will find the run-time impact of memory, resources, and handles to be too severe.  Code is not logically separated. This makes it harder to reuse code that can be found inside the tabsheets.  Replacement of tabs. If you have a custom tab that only displays for one customer, you must add the tab and controls all in the same unit.  To solve these problems, this article will focus on a framework that will show you how to use TFrames, inheritance and interfaces to get your application all of the benefits of the TPageControl, without the drawbacks. Along the way, we'll also get rid of a couple of bugs that you would encounter if you created the framework from scratch.  Download the sample code for this article, and customize it for your project.   TFrame giveth and TFrame taketh away According to the Delphi help file, "TFrame is a container for components; it can be nested within forms or other frames.". Our goal is to have a TPageControl with many TTabsheets, and let each TTabsheet host a TFrame. Using this one bit of indirection, we address all of the drawbacks listed above. This thinking isn't new - it's been with us since Delphi 1 and TTabbedNotebook. People have searched for a "Best Practice" way of doing this, and in my mind, when working with TPageControl, Peter Below described the best approach. After changing it a bit, here is the first bit of code:   { Dynamic support for frame-based tabsheets } type   TFrameClass = class of TFrame;  procedure TSampleForm.FormCreate(Sender: TObject); begin   Tabsheet1.Tag := Integer(TFrame1);   Tabsheet2.Tag := Integer(TFrame2); end;  procedure TSampleForm.CreateFrame(ATabsheet: TTabSheet); var   frame: TFrame; begin   if GetFrame(ATabsheet) = nil then     if ATabsheet.Tag </post></Blog>

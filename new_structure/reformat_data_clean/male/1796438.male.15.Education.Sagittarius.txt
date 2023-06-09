@@ -1,0 +1,1 @@
+differentiating f x g x f x 4x g x x find dy dx 4x x write guess check differentiating first principles lim f x h f x h h f x 4x x f x h x h x h f x h 4x 4h x 2xh h lim 4x 4h x 2xh h 4x x h h lim 4h 2xh h h h lim h 2x h h h lim 4h 2x h h2x therefore f x g x say dy f x g x dx examples x 3x x3xy 3xy x xy xxy 4xx

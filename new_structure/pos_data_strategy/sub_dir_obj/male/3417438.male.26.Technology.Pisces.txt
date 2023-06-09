@@ -1,0 +1,1 @@
+sunhelp use vi mode option vi ksh ksh shell mode get command esc k use combination access command command esc j use combination access command completion esc use combination filename portion thereof filename check esc use combination show command point

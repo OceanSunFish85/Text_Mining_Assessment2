@@ -1,0 +1,1 @@
+gcc egcs use options o3 compile code optimize object code intermediate files strip unnecessary comments linux also type shell strip g exe_file give effect add options describe

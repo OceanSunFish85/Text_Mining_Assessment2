@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Blog>
+<date>20,June,2004</date>
+<post>
+
+	 
+      "......Transactions provide a way to bundle a set of operations into an atomic execution unit.  This atomic, all or nothing property is not new: it appears throughout life. For example, a minister conducting a marriage ceremony first asks the bride and groom, "Do you take this person to be your spouse?" Only if they both respond "I do" does the minister pronounce them married and commit the transaction. In short, within any transaction, several independent entities must agree before the deal is done. If any party disagrees, the deal is off and the independent entities are reverted back to their original state. In transactions, this is known as a rollover operation......"  ææåï¼çºäºè§£éä¸äºåé¡ï¼èä¾å­å¾å¾æ¯æææçæ¹æ³ãå°±å¥½åä»¥ä¸çéååé¡ï¼ä¸éè¦è¡ï¼è®äºå°±ææç½ãé»è¦å¾å¾ä¸éå¦æ­¤ï¼åªæ¯è¢«å¤ªå¤çå°æåè©è¿·æï¼è®åå­¸èéæ²å¥éï¼å°±æå°è¿·æãå¥½çè§£éä¹åæ¨£ä¸éå¦æ­¤ï¼æ·±å¥æ·ºåºï¼ä¸è¨å©èªéè®è®èå°è±¡æ·±å»ã
+    
+</post>
+<date>15,June,2004</date>
+<post>
+
+	 
+      éæ¯æçç¬¬ä¸ç¯ãä¸æè¦å¯«äºä»éº¼ã æè¨±éå°æè®æä¸åéè²¨åºï¼ä»éº¼é½æï¼æå¿æï¼ææ£æï¼ææäºï¼ææ°å¯«ç¨å¼çå¿å¾ã æä»¥ï¼æå°ä»å½åçºï¼éµå±±éè²¨åºã  éæè¨±æ¯æè²¼åçåç¨±äºã
+    
+</post>
+</Blog>

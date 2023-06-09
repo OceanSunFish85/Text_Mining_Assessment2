@@ -1,0 +1,1 @@
+number random number gen v1 burt daniel generate x number number random number time many time lbl numbersand lbl time many time line press alpha f2 c b clrtext int locatea e e f f g g h h clrtext next clrtext locateyou locatee locatelocatelocatelocatelocatelocatelocated locatee locatef locateg locateh locatei locateg locateh locatei whileend getkey whileend goto

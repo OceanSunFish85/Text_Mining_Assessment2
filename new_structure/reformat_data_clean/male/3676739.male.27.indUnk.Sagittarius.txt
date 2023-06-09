@@ -1,0 +1,1 @@
+investigating tools simulating website traffic lately one interesting contender ip traffic test records traffic one environment say production system allows playback another say perf testing environment problem see windows tool think windows boxes beefy enough record production traffic quite voluminous

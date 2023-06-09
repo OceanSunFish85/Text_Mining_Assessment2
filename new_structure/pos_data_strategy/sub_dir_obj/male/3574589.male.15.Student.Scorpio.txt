@@ -1,0 +1,1 @@
+x number gen v1 burt daniel generate number lbl line press alpha f2 c b clrtext int locatea e e f f g g h h clrtext locateyou locatee locatef locateg locateh locatei locateg locateh locatei whileend goto

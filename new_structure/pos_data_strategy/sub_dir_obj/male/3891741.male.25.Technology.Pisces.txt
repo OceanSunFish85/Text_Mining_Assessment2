@@ -1,0 +1,1 @@
+_username _password _conn pain look connection oracle jdbc driver drivermanager getconnection jdbc oracle thindb_name note classes12 zip mysql dbc my_user driver com mysql jdbc driver string jtds sqlserversome_db user blah password blah try class sourceforge jtds jdbc driver newinstance drivermanager getconnection catch exception printstacktrace end try catch

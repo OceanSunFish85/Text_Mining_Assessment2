@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Blog>
+<date>04,August,2004</date>
+<post>
+
+	 
+      1.ééåäººç¶²é å±äº«  ç³»çµ±åå¥½è¨­å®-å±äº«-æå-åäººç¶²é å±äº«  åæ­¢   éåphpæ¯æ´    sudo /Applications/TextEdit.app/Contents/MacOS/TextEdit /private/etc/httpd/httpd.conf  è¼¸å¥ç®¡è£¡èå¯ç¢¼  ----- å°æ¾ ----- #LoadModule php4_module        libexec/httpd/libphp4.so  ----- æ¹æ ----- LoadModule php4_module        libexec/httpd/libphp4.so  ----- å°æ¾ ----- #AddModule mod_php4.c  ----- æ¹æ ----- AddModule mod_php4.c  2.åååäººç¶²é å±äº«  ç³»çµ±åå¥½è¨­å®-å±äº«-æå-åäººç¶²é å±äº«  åå   åç´ php 4.3.8  1.ä¸è¼ php 4.3.8 æé-æç¨ç¨å¼-å·¥å·ç¨å¼-çµç«¯æ©-éµå¥  curl -O http://tw2.php.net/get/php-4.3.8.tar.bz2  tar -xjf php-4.3.8.tar.bz2  cd php-4.3.8  ./configure '--prefix=/usr' '--mandir=/usr/share/man' '--infodir=/usr/share/info' '--with-apxs' '--with-ldap=/usr' '--with-kerberos=/usr' '--enable-cli' '--with-zlib-dir=/usr' '--enable-trans-sid' '--with-xml' '--enable-exif' '--enable-ftp' '--enable-mbstring' '--enable-dbx' '--enable-sockets' '--with-iodbc=/usr' '--with-curl=/usr' '--with-config-file-path=/etc'  make  sudo make install  è¼¸å¥ç®¡è£¡èå¯ç¢¼  sudo cp php.ini-dist /etc/php.ini  å®è£ MySQL 4.0.20  1.ä¸è¼ MySQL 4.0.20 http://mysql.isu.edu.tw/Downloads/MySQL-4.0/mysql-standard-4.0.20-apple-darwin7.3.0-powerpc.dmg  2.å®è£ MySQL 4.0.20 éå©åé½è¦è£ mysql-standard-4.0.20-apple-darwin7.3.0-powerpc.pkg MySQLStartupItem.pkg  3.è£å¥½å¾éæ°éæ©  å®è£ phpMyAdmin-2.5.7-pl1  1.ä¸è¼ phpMyAdmin http://belnet.dl.sourceforge.net/sourceforge/phpmyadmin/phpMyAdmin-2.5.7-pl1.tar.bz2  2.è§£å£ç¸®å¾æ¾å°ç¶²é ç®é è§£éæ¾å° http://localhost/phpMyAdmin/ ææ¯ http://localhost/~ä½¿ç¨èåç¨±/phpMyAdmin/  ç®éå°æéä¿  http://localhost è³æºåº«\WebServer\Documents  http://localhost/~ä½¿ç¨èåç¨±/ ä½¿ç¨è\ä½¿ç¨èåç¨±\ç¶²ç« 3.è¨­å®å¸³èå¯ç¢¼ éå http://localhost/phpMyAdmin/ ææ¯ http://localhost/~ä½¿ç¨èåç¨±/phpMyAdmin/  è¨­å®rootå¯ç¢¼ æ¬é root ä½¿ç¨èåç¨±.local æ¯ ALL PRIVILEGES æ¯ ç·¨è¼¯ root localhost æ¯ ALL PRIVILEGES æ¯ ç·¨è¼¯ ç·¨è¼¯-æ´æ¹å¯ç¢¼ å¯ç¢¼:ä½ çå¯ç¢¼ ç¢ºèªå¯ç¢¼:ä½ çå¯ç¢¼ å·è¡ å©åé½è¦æ¹  æä¸é¢å©åå¾èµ·ä¾ åªé¤ä½¿ç¨èåéæ°è®åæ¬é å·è¡  æ°å¢ä½¿ç¨è æ¬é-æ°å¢ä½¿ç¨è ä½¿ç¨èåç¨±:æå­è¼¸å¥:èªå·±å¡« ä¸»æ©:æ¬å°:çä½ éè¦èå® å¯ç¢¼:æå­è¼¸å¥:ä½ çå¯ç¢¼ ç¢ºèªå¯ç¢¼:ä½ çå¯ç¢¼ æ´é«æ¬é:å¨å¾(çä½ éè¦èå®) å·è¡  ç¨æå­ç·¨è¼¯æéæéphpMyAdmin\config.inc.php ----- å°æ¾ ----- $cfg['PmaAbsoluteUri'] = '';  ----- æ¹æ ----- $cfg['PmaAbsoluteUri'] = 'http://localhost/phpmyadmin/';  ----- å°æ¾ ----- $cfg['Servers'][$i]['auth_type']     = 'config';  ----- æ¹æ ----- $cfg['Servers'][$i]['auth_type']     = 'http';
+    
+</post>
+<date>04,August,2004</date>
+<post>
+
+    
+       éæ¯ç¬¬äºæ¬¡çéé¨çï¼éæ¯å¿«ææ·ã  é¤äºå°ç¶æçæåå¤ï¼ææ¬£è³Samçä¸ççæåº¦ï¼ä»ç¸½æ¯å¯ä»¥çå°æå®ç´çä¸é¢ï¼èæå»æ¯å¨å­¸ç¿å¦ä½æ´å®ç´ççé¢å°ææèçä¸çï¼è¦ºå¾è«·åºã  ä»çå¾å¸«å°ä»èªªï¼è·ä½ åæåæå¾å°çæ¯ä½ æ´å¤ã  å»å¯ä»¥è®äººå·èï¼è®ä½ çäºææ´æ¸æ¥ã 
+    
+    
+</post>
+<date>04,August,2004</date>
+<post>
+
+    
+       è·åå®¶å¹«å»çä¾ç¤èï¼ç¤æ²å©ä¸å°±éå§ä¸å¤§é¨ï¼å¾ä¾å°å±±ä¸å æ²¹ç«åçã  ç²ï¼è½å©å´ï¼å¤§å¯è²´ã  ä¹ï¼é£ä¹è¦èå©è°æã 
+    
+    
+</post>
+<date>04,August,2004</date>
+<post>
+
+
+       
+      æå¥½çæ¶phpBBçåè²»ç©ºé  ç¶²å: http://www.freesites.ws 15 MB ç©ºé æ¯æ´ PHP æ¯æ´ PERL æ¯æ´ SSI 1 MySQL FTP ä¸å³ftp.freesites.ws ç¡å»£å  1. é¦é ä¸­æ¾ - Click Here to Signup! - ä¸¦æå¥ã  2. çå®ä¸å å­ä¹å¾å¨ä¸é¢æ Acceptã  3. ä»¥ä¸æ¯å¡«è¡¨çæ¹æ³ First Name: å§å Last Name: åå­ Email Address: E-mail (æ­£ç¢ºèå¦ä¹å¯) Address: ææ¸å­è·è±æå°±å¯ City: Hong Kong / Tai Wan State/Province: äºå¡«æ¸å­ Postal Code: äºå¡«æ¸å­ Country: Hong Kong / Tai Wan Phone: äºå¡«æ¸å­  4. å¸³èå¡«è¡¨ Account Username: å¸³èå Account Password: å¸³èå¯ç¢¼ Domain: åå  5. ä¹å¾å°±å®æç¬¬ä¸æ­¥çè¨»å, ç­å°ç¶²é è¼å¥å¾ææä»¥ä¸çå¥å­: Please be patient while your signup is processed. This process may take up to 1 minute. [ Customer accountID test successfully added ] Congratulations on your new account! Please check your email for your login information.  6. ä¹å¾å¨å·¦é¢ç»å¥, æå»å° CPenal, è¼¸å¥æ­£ç¢ºçå¸³èèå¯ç¢¼ã  7. é²å¥ä¹å¾å¨ä¸ææ Please update your contact information here æå¥åæ´æ°ä½ æ­£ç¢ºç E-Mail.  8. å¨é¨å®æ, ä»¥ä¸æ¯æ¶ phpBBX_SP çæå­¸ã   æ¶ phpBBX_SP çæå­¸  1. åéä¸å MySQL Account, å¨ Cpenal ä¸æå¥ MySQL Databases.  2. ç Databases: , å¨ä¸é¢æä¸å Db: çè¼¸å¥æ¬, è¼¸å¥ä½ çè³æåº«åç¨±, ä¹å¾æ ADD Db.  3. Users: ä¸­è¼¸å¥å¸³èèå¯ç¢¼ã  3. ä¸é¢æ¯å®è£ phpBBX SP çè¼¸å¥è³æ. è³æåº«ä¼ºæå¨ä¸»æ©åç¨±: localhost æ¨çè³æåº«åç¨±: ä½ çå¸³è_ååè¼¸å¥ Db çåç¨± è³æåº«ä½¿ç¨èå¸³è: CPenal çå¸³è è³æåº«å¯ç¢¼: CPenal çå¯ç¢¼  CPenal çå¸³è: php CPenal çå¯ç¢¼: 123 Db: æ¯ test  å°±å¦ä»¥ä¸å¡«: è³æåº«ç¶²å: localhost è³æåº«åç¨±: php_test å¸³è: php å¯ç¢¼: 123  
+     
+
+    
+</post>
+<date>04,August,2004</date>
+<post>
+
+
+       
+      é£çºå¹¾æçæ¨éé ­å½©æ²äººéï¼çéä¸çå¥½åæ¯ååå§ï¼å¨çé·å¥è¬äºå ±æçï¼çé¯é­è·³èç¢¼ï¼ä¹æäººæå½åå¤¢ï¼å¤¢æçï¼æä¾ç¶æ¯å æä¸è²·æ¨éï¼ä¹è¨±åªå¤©å¤§ä¾¿ãåºå¼µå½©å·ï¼æåå¾ä¸­çå§ã  ä¸å·å¨æå¸æç¡çª®ã 
+     
+
+    
+</post>
+<date>04,August,2004</date>
+<post>
+
+
+       
+      1.ééåäººç¶²é å±äº«  ç³»çµ±åå¥½è¨­å®-å±äº«-æå-åäººç¶²é å±äº«  åæ­¢   éåphpæ¯æ´    sudo /Applications/TextEdit.app/Contents/MacOS/TextEdit /private/etc/httpd/httpd.conf  è¼¸å¥ç®¡è£¡èå¯ç¢¼  ----- å°æ¾ ----- #LoadModule php4_module        libexec/httpd/libphp4.so  ----- æ¹æ ----- LoadModule php4_module        libexec/httpd/libphp4.so  ----- å°æ¾ ----- #AddModule mod_php4.c  ----- æ¹æ ----- AddModule mod_php4.c  2.åååäººç¶²é å±äº«  ç³»çµ±åå¥½è¨­å®-å±äº«-æå-åäººç¶²é å±äº«  åå   åç´ php 4.3.8  1.ä¸è¼ php 4.3.8 æé-æç¨ç¨å¼-å·¥å·ç¨å¼-çµç«¯æ©-éµå¥  curl -O http://tw2.php.net/get/php-4.3.8.tar.bz2  tar -xjf php-4.3.8.tar.bz2  cd php-4.3.8  ./configure '--prefix=/usr' '--mandir=/usr/share/man' '--infodir=/usr/share/info' '--with-apxs' '--with-ldap=/usr' '--with-kerberos=/usr' '--enable-cli' '--with-zlib-dir=/usr' '--enable-trans-sid' '--with-xml' '--enable-exif' '--enable-ftp' '--enable-mbstring' '--enable-dbx' '--enable-sockets' '--with-iodbc=/usr' '--with-curl=/usr' '--with-config-file-path=/etc'  make  sudo make install  è¼¸å¥ç®¡è£¡èå¯ç¢¼  sudo cp php.ini-dist /etc/php.ini  å®è£ MySQL 4.0.20  1.ä¸è¼ MySQL 4.0.20 http://mysql.isu.edu.tw/Downloads/MySQL-4.0/mysql-standard-4.0.20-apple-darwin7.3.0-powerpc.dmg  2.å®è£ MySQL 4.0.20 éå©åé½è¦è£ mysql-standard-4.0.20-apple-darwin7.3.0-powerpc.pkg MySQLStartupItem.pkg  3.è£å¥½å¾éæ°éæ©  å®è£ phpMyAdmin-2.5.7-pl1  1.ä¸è¼ phpMyAdmin http://belnet.dl.sourceforge.net/sourceforge/phpmyadmin/phpMyAdmin-2.5.7-pl1.tar.bz2  2.è§£å£ç¸®å¾æ¾å°ç¶²é ç®é è§£éæ¾å° http://localhost/phpMyAdmin/ ææ¯ http://localhost/~ä½¿ç¨èåç¨±/phpMyAdmin/  ç®éå°æéä¿  http://localhost è³æºåº«\WebServer\Documents  http://localhost/~ä½¿ç¨èåç¨±/ ä½¿ç¨è\ä½¿ç¨èåç¨±\ç¶²ç« 3.è¨­å®å¸³èå¯ç¢¼ éå http://localhost/phpMyAdmin/ ææ¯ http://localhost/~ä½¿ç¨èåç¨±/phpMyAdmin/  è¨­å®rootå¯ç¢¼ æ¬é root ä½¿ç¨èåç¨±.local æ¯ ALL PRIVILEGES æ¯ ç·¨è¼¯ root localhost æ¯ ALL PRIVILEGES æ¯ ç·¨è¼¯ ç·¨è¼¯-æ´æ¹å¯ç¢¼ å¯ç¢¼:ä½ çå¯ç¢¼ ç¢ºèªå¯ç¢¼:ä½ çå¯ç¢¼ å·è¡ å©åé½è¦æ¹  æä¸é¢å©åå¾èµ·ä¾ åªé¤ä½¿ç¨èåéæ°è®åæ¬é å·è¡  æ°å¢ä½¿ç¨è æ¬é-æ°å¢ä½¿ç¨è ä½¿ç¨èåç¨±:æå­è¼¸å¥:èªå·±å¡« ä¸»æ©:æ¬å°:çä½ éè¦èå® å¯ç¢¼:æå­è¼¸å¥:ä½ çå¯ç¢¼ ç¢ºèªå¯ç¢¼:ä½ çå¯ç¢¼ æ´é«æ¬é:å¨å¾(çä½ éè¦èå®) å·è¡  ç¨æå­ç·¨è¼¯æéæéphpMyAdmin\config.inc.php ----- å°æ¾ ----- $cfg['PmaAbsoluteUri'] = '';  ----- æ¹æ ----- $cfg['PmaAbsoluteUri'] = 'http://localhost/phpmyadmin/';  ----- å°æ¾ ----- $cfg['Servers'][$i]['auth_type']     = 'config';  ----- æ¹æ ----- $cfg['Servers'][$i]['auth_type']     = 'http';
+     
+
+    
+</post>
+<date>04,August,2004</date>
+<post>
+
+
+       
+      Blogçºä»éº¼é½æ¯PHPé£ç¨æäºï¼æä¸æPHPå¾å¤é½é§ççã  ç¶²é è¨­è¨æ¯ä¹ç¡æ³è·ç¨å¼è«é¢éä¿ï¼ååæåä¸æç¨å¼ï¼å ä¸å¾ç«¯é¿å¸å¥è·æçè¥¿æ³ï¼è¶æ¯ä¸ç¨é¢çè¶æ¯è¤éï¼æè©²æ¯æè¦ä»éº¼åè½ï¼æä¸æå°±å¥½äºï¼æé»å½±åè» é«ï¼å¯ä»¥èè£¡æè¦çææï¼èä¸æ¯è®ç¶²é è¨­è¨å¸«çæéé½è±å¨å¯«ç¨å¼ï¼åä¾æ¯çè¦½å¨èªéæå°éº¥éå¡å¾æç¥éæ²ææ¢éªå®¶çæ¯å¯¸æ­¥é£è¡ï¼çä»åª½ï¼å¾å¤ç¶²é å¨æ²ç¼ç ä¸é½è®å¾äºä¸å«ç³ï¼éæå­è®è¶å°ï¼è¦ç¨æ¾å¤§é¡æè½çï¼å¤åäººå¯è½é½æ¯æ¿èæ¾å¤§é¡ç¨é»è¦å§ï¼å°ç£æç¥éæ¯ä¸ç¨ï¼é«è«ä¸ä¸å°ç£å§ï¼æ´é¬¼å­ã 
+     
+
+    
+</post>
+<date>04,August,2004</date>
+<post>
+
+
+       
+      å¨å¬åè·å¥³æååµæ¶
+     
+
+    
+</post>
+</Blog>

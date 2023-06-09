@@ -1,0 +1,1 @@
+random number gen v1 programmed burt daniel generate x number random numbers tell many times hit numbersand lbl clrtext many times b squiggly line press alpha f2 c b clrtext int 6ran locatea e e f f g g h h next clrtext locateyou hit locatelocatelocatelocatelocatelocatelocated locatee locatef locateg locateh locatei locateg locateh locatei getkey whileend goto

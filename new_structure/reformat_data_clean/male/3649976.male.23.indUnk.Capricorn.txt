@@ -1,0 +1,1 @@
+right click computer click properties click system restore tab check turn system restore turn system restore drives check box click apply click ok turn back repeat stepand step uncheck turn system restore check box

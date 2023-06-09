@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Blog>
+<date>21,June,2004</date>
+<post>
+
+    
+       The program subclasses the main form and watches for the  WM_WINDOWPOSCHANGING message. When it sees that message, the program  moves the satellite forms to stay with the main form.  ' Process messages. Public Function NewWindowProc(ByVal hwnd As Long, ByVal msg As Long,  ByVal wParam As Long, lParam As WINDOWPOS) As Long Const WM_NCDESTROY =  Const WM_WINDOWPOSCHANGING =       ' If we're being destroyed,     ' restore the original WindowProc.     If msg = WM_NCDESTROY Then         SetWindowLong _             hwnd, GWL_WNDPROC, _             OldWindowProc     Else         ' See if the window is moving.         If msg = WM_WINDOWPOSCHANGING Then             ' The window is moving. Keep the others with it.             Form2.Move Form1.Left + Form1.Width, Form1.Top - 360             Form3.Move Form1.Left - Form3.Width, Form1.Top - 360         End If     End If      ' Continue normal processing. VERY IMPORTANT!     NewWindowProc = CallWindowProc( _         OldWindowProc, hwnd, msg, wParam, _         lParam) End Function  This program removes the title bar from the satellite forms so you  cannot move them directly. You could try to subclass them as well but  moving the group as a whole would be more complicated. For example, you  might need to be able to ignore WM_WINDOWPOSCHANGING messages while you  are moving one of the forms. This example should get you started,  though. ==========  
+    
+    
+</post>
+<date>18,June,2004</date>
+<post>
+
+    
+       The main form's KeyPreview is True so its KeyDown and Keyup event  handlers get keyboard events. Those event handlers set a value in an  array to indicate whether a key is up or down.  One odd case that this handles is when the user presses multiple keys.  The array will know if the user is holding down the Left and Up arrows  at the same time.  'This vector contains the state of all keys 'I think KeyCode goes from 0 to 255, but you 'can change this if you want Dim Keys(255) As Boolean  'Its used to stop the Do-Loop of the Form_Load Dim StopLoop As Boolean  Private Sub Form_KeyDown(KeyCode As Integer, Shift As Integer)    'The key KeyCode is pressed now...    Keys(KeyCode) = True End Sub  Private Sub Form_KeyUp(KeyCode As Integer, Shift As Integer)    'The key KeyCode is NOT pressed now...    Keys(KeyCode) = False End Sub  Private Sub Form_Load() Dim str As String     Me.Show     'The form must handle the key events    Me.KeyPreview = True     StopLoop = False     Do       'Just check for the arrow keys to see       'if they are pressed. To check form more       'keys, just ask for the correct subindex       'in the "Keys" array       str = ""        If Keys(vbKeyUp) Then str = str + "UP"  vbCrLf       If Keys(vbKeyDown) Then str = str + "DOWN"  vbCrLf       If Keys(vbKeyLeft) Then str = str + "LEFT"  vbCrLf       If Keys(vbKeyRight) Then str = str + "RIGHT"  vbCrLf        'Refresh the label       lblKeys = str        'Important!! (to not freeze the thing)       DoEvents    Loop Until StopLoop End Sub  Private Sub Form_Unload(Cancel As Integer)    'Important!! To stop the loop, so the    'form can be unloaded    StopLoop = True End Sub ==========  
+    
+    
+</post>
+<date>18,June,2004</date>
+<post>
+
+    
+       This program uses the ClientToScreen API function to convert the target  coordinates from the screen's coordinate system to the screen's  coordinates system. It then uses the SetCursorPos API function to move  the mouse there.  Sub MoveMouse(x As Single, y As Single) Dim pt As POINTAPI      pt.x = x     pt.y = y     ClientToScreen hwnd, pt     SetCursorPos pt.x, pt.y End Sub  
+    
+    
+</post>
+<date>18,June,2004</date>
+<post>
+
+    
+       This program simply loops through the pixels in the images. For each  image in top-to-bottom order, the program looks for a color other than  the one defined as transparent. When it finds such a color, it stops  looking at the images and sets the output pixel's color using PSet.  Private Sub cmdCombine_Click() Dim max_input As Integer Dim transparent As Long Dim wid As Single Dim hgt As Single Dim X As Single Dim Y As Single Dim i As Integer Dim clr As Long      cmdCombine.Enabled = False     MousePointer = vbHourglass     DoEvents      max_input = picInput.ubound     For i = 0 To max_input         picInput(i).AutoRedraw = True         picInput(i).ScaleMode = vbPixels     Next i      picResult.Width = picInput(0).Width     picResult.Height = picInput(0).Height     picResult.ScaleMode = vbPixels      transparent = picTransparent.BackColor     wid = picInput(0).ScaleWidth     hgt = picInput(0).ScaleHeight     For Y = 0 To hgt         For X = 0 To wid             For i = max_input To 0 Step -1                 clr = picInput(i).Point(X, Y)                 If clr </post></Blog>

@@ -1,0 +1,1 @@
+sox simple outline xml new way type xml sox makes really easy write xml uses indentation la python get rid closing tags instance html head title hello body h1 title p little text href link would render something like untested hello title little text link really seems great sox implemented java source included via curtis duhn motherlog

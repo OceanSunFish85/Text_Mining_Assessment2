@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Blog>
+<date>25,July,2004</date>
+<post>
+
+    
+        ... they say. But who would think the US Armed Forces will be your favorite Spa's greatest competitor?   Something to pick up a slow Sunday morning.   urlLink  Bigger Breasts for Free: Join the Army        GI Jane part deux?    Bring it on!     ----     You know that Filipino admonition,  "Huwag kang papaulan, lalagnatin ka?"  (literally Don't get rained on, you'll get a fever)        Don't listen to it.I promise (not), take it from someone  who didn't and got sick.                 
+    
+    
+</post>
+<date>24,July,2004</date>
+<post>
+
+    
+         She isn't apologizing, yet the move seems to be more popular than expected. What's the deal with Angelo De La Cruz' beheadingand why did President Arroyo do a complete policy turn-around at the risk of loss of face?       urlLink Arroyo defiant over US criticism of Philippine troop pullout      The name "Angelo De La Cruz" resembles the character in Filipino society that represents the average Filipino. Americans have Joe, or Uncle Sam to represent them, we Filipinos have our Juan De la Cruz.    To me, the modern Juan de la Cruz has many stereotypes. There are three that comes to mind:       He is either underemployed or unemployed in his own country despite having a degree.    He is one of the 2,000 Filipinos who leave every day to find work overseasin mainly blue collar jobs to support a family he will not see grow.     He is immigrating his whole family to another country and embracing a different citizenship, cutting his roots and ties from home.     Angelo De la Cruz fits the second stereotype to a T. He represents the one group that has sustained the Philippine economy for the last two decades.   Heis an Overseas-Filipino-Worker (OFW), and there are 8-million of them supporting extended families here in the Philippines.   For Filipinos, real war heroes are OFWs and not soldiers. They represent fathers andmothers, uncles and aunts,sisters andbrothers,sons and daughters. They are not with us but we talk of them on every family occasion, where they are, the hardships they endure, and the familiar"if only I could be in their shoes" spiels.    Mr Angelo De la Cruz is Juan de la Cruz.Try seeing your favorite real-life superhero in chains and at gunpoint, you'll get the picture why the Filipinos connect with his fate while other would see "just" collateral damage. Craven as it may seem, President Arroyo cannot afford it.      
+    
+    
+</post>
+<date>23,July,2004</date>
+<post>
+
+    
+        An update to my previous post on  urlLink NUnit Testfixture refactoring   , it seems the way other developers do it is through inheriting from a base class.        See  urlLink  10 Ways to Make Your Code More Testable           Though I wish i didn't have to create derived classes for monolithic TestFixtures, it does make sense.     
+    
+    
+</post>
+<date>22,July,2004</date>
+<post>
+
+    
+        I recentlyjuststarted fooling around with theNUnit and NUnitAddin framework for my current project. See  urlLink NUnitAddIn .I was doing the test-driven coding part when I realized that in this case, the framework always returns an incomplete test (a yellow mark when testing doCommon) when I try to refactor within this particular TestFixture:     [TestFixture]       public class  MyObjectTest  {       MyObject myObject;          [SetUp]       public void  SetUp()      {      myObject = new MyObject();       //...       }       [TearDown]       public void  TearDown()      {       // ...       }         [Test]       public void  TestDoProcess()      {      Assertion.AssertEquals("GetRange",myObject.i,2);        doCommon(myObject);        myObject.DoProcess();       Assertion.AssertEquals("GetRange",myObject.i,1);      }           [Test]       public void  TestDoReset()      {      Assertion.AssertEquals("GetRange",myObject.i,2) ;        doCommon(myObject);        myObject.DoReset();      Assertion.AssertEquals("GetRange",myObject.i,0);      }          //this will not be ignored!   //[Ignore("This is not a test!")]        public void    doCommon  (MyObject anObject)      {      //do common processing on anObject        anObject.DoCommonProcess1();       anObject.DoCommonProcess2();       //...       }     }     I get the following:    RunningdoCommon TestCase    'HotBlue.Utility.MyObjectTest. doCommon '   not executed: Method doCommon's signature is not correct:  it must not have parameters .       Since the  doCommon( )  member function was originally an ignored test case, adding the  [Ignore("This is not a test!")]  attribute will still result to the logging of a non-tested attribute, therefore I'd still get a yellow light.    My question is, what's the  [Test]  attribute for if it doesn't differentiate a normal member from a testable member? What am I doing wrong, methinks?    It's a funky tool all in all, but can I refactor?    
+    
+    
+</post>
+<date>22,July,2004</date>
+<post>
+
+    
+        So this is what blogging is . . .     blank space that shouts at you to fill her up!         I am, welcoming myself to my very first blog site.         Now I 'll have to get back to where I left off before I became sidetracked by these cute little  stop  signs:            Nowwhere's that  GraphicsPath!?          Til next post, Peace.       
+    
+    
+</post>
+</Blog>

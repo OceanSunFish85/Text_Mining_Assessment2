@@ -1,0 +1,1 @@
+flickr photo border solid 2px flickr yourcomment flickr frame text align left padding 3px flickr caption font color margin top 0px flickr buddyicon margin right 5px vertical align middle border solid 1px flickr postedby font

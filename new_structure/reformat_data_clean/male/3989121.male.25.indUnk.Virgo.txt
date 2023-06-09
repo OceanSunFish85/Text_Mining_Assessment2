@@ -1,0 +1,1 @@
+flickr photo border solid 1px flickr yourcomment flickr frame float left width 150px text align center padding 3px margin right 10px flickr caption font color margin top 0px flickr buddyicon margin right 5px vertical align middle border solid 1px flickr postedby fontweek side view originally uploaded bigbelly

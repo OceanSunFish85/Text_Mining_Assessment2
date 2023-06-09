@@ -1,0 +1,1 @@
+maintain views paths indicate existance paths tree pattern queries contain selection nodes need know existance paths index selection problem np hard problems design fragmentation schema need consider update problems workload model query q need assign weight w paper discussed workload model referenced

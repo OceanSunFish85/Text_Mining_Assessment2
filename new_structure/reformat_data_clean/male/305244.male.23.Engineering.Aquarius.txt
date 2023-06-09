@@ -1,0 +1,1 @@
+old nmap parser xml module updated nmap parser perl namepspace includes various changes see documentation update old scripts using new core parser replace use call use nmap parser xml use nmap parser functionality nmap parser xml included distribution ofas transition module deprecated future another note birthday 23yrs
